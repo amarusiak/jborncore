@@ -19,3 +19,19 @@ git push -u origin master
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
+git log --all --decorate --oneline --graph
+git log --graph --decorate --oneline
+git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"
+
+git log --graph --full-history --all --color \
+        --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+      
+git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"
+With colors (if your shell is Bash):
+
+git log --graph --full-history --all --color \
+        --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+      
+                
+
+
